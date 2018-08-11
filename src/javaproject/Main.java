@@ -50,14 +50,20 @@ public class Main {
                 else if (strengthNum < 3) {
                     System.out.println("You are too weak");
                 }
+                else if (strengthNum >= 3 && strengthNum < 5) {
+                    System.out.println("Still weak but getting stronger");
+                }
                 else if (strengthNum == 5) {
                     System.out.println("You have an average strength");
                 }
-                else if (strengthNum > 8) {
+                else if (strengthNum > 5 && strengthNum <= 7) {
                     System.out.println("You are strong");
                 }
-                else {
+                else if (strengthNum >= 8 && strengthNum < 10){
                     System.out.println("You are very strong");
+                }
+                else {
+                    System.out.println("WOW You are Too STRONG");
                 }
             }
             else if (input.equalsIgnoreCase("D")) {
@@ -100,7 +106,7 @@ public class Main {
                 int i = 0;
                 while(i < count)
                 {
-                    System.out.print(firstNum+" ");
+                    System.out.print(firstNum + " ");
                     int nextNum = firstNum + secondNum;
                     firstNum= secondNum;
                     secondNum = nextNum;
@@ -126,7 +132,7 @@ public class Main {
                 int pyramidHeight = scanner.nextInt();
                 // validate pyramid height
                 if (pyramidHeight > 20 || pyramidHeight < 2) {
-                    System.out.println("Please try again");
+                    System.out.println("Incorrect Input Please try again");
                 }
                 // outer loop
                 else {
