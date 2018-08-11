@@ -126,10 +126,13 @@ public class Main {
             }
             else if (input.equalsIgnoreCase("G")) {
                 success = true;
+
                 System.out.println("For Loop Program");
                 System.out.println("Pyramid");
                 System.out.print("Enter Pyramid Height 2-20: ");
+
                 int pyramidHeight = scanner.nextInt();
+
                 // validate pyramid height
                 if (pyramidHeight > 20 || pyramidHeight < 2) {
                     System.out.println("Incorrect Input Please try again");
@@ -137,10 +140,11 @@ public class Main {
                 // outer loop
                 else {
                     for (int i = 0; i < pyramidHeight; i++) {
-                        // print spaces
+                        // inner loop prints spaces
                         for (int j = 0; j < pyramidHeight - i; j++) {
                             System.out.print(" ");
                         }
+                        // inner loop prints # sign to build pyramid
                         for (int k = 0; k <= i; k++) {
                             System.out.print("# ");
                         }
